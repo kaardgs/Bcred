@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<meta charset="utf-8">
+<meta name="author" content="Karina Rodrigues">
+<meta name="keywords" content="Teste, Teste, Teste">
+<meta name="description" content="Teste de Dev Front Ent para Bcred">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, maximum-scale=1, user-scalable=no" />
+<meta name="robots" content="index,follow">
+<link rel="icon" href="img/favicon.png">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<title>Bcredi</title>
+<head>
+
+</head>
+
+<body>
+    <header class="cabecalho">
+        <img src="img/logo.svg" class="cabecalho__img--logo">
+        <img src="img/avatar.png" class="cabecalho__img--avatar">
+        <b class="cabecalho--nomeUsuario">Ana Maria</b>
+    </header>
+
+    <section class="main">
+            <img src="img/emoji.png" class="main__img--emoji">
+            <b class="main__msg--boasVindas">Olá, Ana maria,
+                <br> bem vindo à plataforma da Bcredi!</b>
+            <p class="main__msg--descricao">Aqui você pode acompanhar o andamento, tirar duvidas, emitir e enviar documentos e manter-se atualizada sobre
+                o progresso da sua proposta.</p>
+            <button class="button--proposta">Preencher minha proposta</button>
+    </section>
+
+    <section class="popUp">
+        <article class="popUp--box">
+            <img src="img/ic-close.svg" class="popUp--btnClose">
+            <h2 class="popUp--titulo">Quase tudo pronto!</h2>
+            <p class="popUp--descricao">Agora você receberá uma confirmação por email.</p>
+        </article>
+    </section>
+    <script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script>
+        $(".button--proposta").click(function () {
+            $(".popUp").show();
+        });
+        $(".popUp--btnClose").click(function () {
+            $(".popUp").hide();
+        })
+    </script>
+</body>
+
+</html>

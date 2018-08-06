@@ -1,0 +1,192 @@
+body{
+    margin: 0;
+    font-family: arial;
+}
+.cabecalho{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.308); 
+}
+    .cabecalho__img--logo{
+        margin: 3% 3%;
+        width: 26%;
+    }
+    .cabecalho__img--avatar{
+        margin: 2% 2%;
+        float: right;
+        width: 11%;
+    }
+    .cabecalho--nomeUsuario{
+        left: 67%;
+        position: absolute;
+        color: #353535;
+        font-size: 13px;
+        top: 36%;
+    } 
+.main{
+    text-align: center;
+    width: 97%;
+    font-family: arial;
+    margin: 3%;
+    
+}
+    .main__img--emoji{
+        margin: 20% 33% 5% 33%;
+        width: 30%;
+    }
+    .main__msg--boasVindas{
+        font-size: 22px;
+        line-height: 35px;
+        color: #353535;
+    }
+    .main__msg--descricao{
+        margin: 4% 4%;
+        font-size: 13px;
+        color: #8793a4;
+        line-height: 20px;
+    }
+    .button--proposta{
+        font-size: 12px;
+        width: 180px;
+        background-color: #5589fa;
+        border: none;
+        color: white;
+        margin-top: 6.5%;
+        cursor: pointer;
+        padding: 13px 15px;
+        border-radius: 3px;
+    }
+/*popUp*/
+.popUp{
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.308);
+    top:0;
+    left: 0;
+}
+    .popUp--box{
+        padding: 1%;
+        width: 90%;
+        height: 177px;
+        background-color: white;
+        text-align: center;
+        margin: 0% 4%;
+        position: relative;
+        top: 32%;
+    }
+    .popUp--titulo{
+        color: #353535;
+        margin-top: 20%;
+    }
+    .popUp--descricao{
+        margin: 7% 2%;
+        color: #353535a8;
+        font-size: 13px;
+    }
+    .popUp--btnClose{
+        float: right;
+        margin: 2%;
+        width: 7%;
+        cursor: pointer;    
+    }
+
+/*IMPORTS*/
+@media screen and (min-width: 480px){
+    .cabecalho__img--logo {
+        width: 20%;
+    }
+    .cabecalho__img--avatar {
+        width: 9%;
+    }
+    .cabecalho--nomeUsuario {
+        left: 74%;
+    }
+    .popUp--box {
+        height: 214px;
+        top: 22%;
+    }
+    .popUp--titulo {
+        margin-top: 13%;
+    }
+    .popUp--btnClose {
+        width: 6%;
+    }
+}
+@media screen and (min-width: 720px){
+    .cabecalho__img--logo {
+        width: 10%;
+         margin: 2% 2%;
+    }
+    .cabecalho__img--avatar {
+        margin: 1% 1%;
+        width: 6%;
+    }
+    .cabecalho--nomeUsuario {
+        left: 81%;
+    }
+    .main__img--emoji {
+        margin: 20% 40% 2% 40%;
+        width: 20%;
+    }
+    .main__msg--descricao {
+        margin: 2% 21%;
+    }
+    .button--proposta {
+    margin-top: 1.5%;
+    }
+    .popUp--box {
+        margin: 7% 0% 9% 30%;
+        width: 41%;
+        height: 21%;
+    }
+    .popUp--titulo {
+        margin-top: 13%;
+    }
+    .popUp--btnClose {
+        width: 6%;
+    }
+}
+
+    @media screen and (min-width: 1280px)  {
+        .cabecalho__img--logo {
+            margin: 1% 0% 0% 15%;
+            width: 6%;
+
+        }
+        .cabecalho__img--avatar {
+            margin: 0.5% 15% 0.5% 0%;
+            width: 2.5%
+        }
+        .cabecalho--nomeUsuario {
+            left: 78%;
+            top: 39%;
+        }
+        .main__img--emoji {
+            margin: 16% 46% 1% 46%;
+            width: 8%;
+        }
+        .main__msg--descricao {
+            margin: 1% 36%;
+        }
+        .button--proposta {
+            margin-top: 1%;          
+        }
+        .popUp--box {
+            width: 19%;
+            height: 160px;
+            margin: 0% 41%;
+            top: 40%;
+        }
+        .popUp--btnClose {
+            margin: 0%;
+            width: 8%;
+        }
+        .popUp--titulo {
+            margin-top: 14%;
+        }
+    }
+  
